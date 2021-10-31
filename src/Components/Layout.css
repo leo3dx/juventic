@@ -1,0 +1,36 @@
+.me-6{
+    margin-right: 100px;
+}
+.fs-6{
+    font-size:18px !important;
+}
+.logo{
+    width: 150px;
+}
+.logo2{
+    width: 250px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding:30px;
+  }
+.slider{
+    height:650px;
+}
+.widthCard{
+    width: 18rem;
+}
+
+.imagenMenu{
+    height: 200px;
+}
+.resena{
+    width: 90%;
+}
+.descarga{
+    width:140px;
+}
