@@ -1,2 +1,0 @@
-# juventic
-Repositorio juventic
