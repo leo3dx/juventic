@@ -9,7 +9,25 @@ class Plato extends Component {
         super(props);
         this.state = {  }
     }
+    agregar(){
+        let productos = [
+            document.getElementById(arguments[1]).value, 
+            document.getElementById(arguments[2]).value, 
+            document.getElementById(arguments[0]).value
+        ];
+
+        for (let i = 0; i < 30; i++) {
+            if (localStorage.getItem(i) == null) {
+                localStorage.setItem(i,JSON.stringify(productos))
+                break;
+            }
+            
+        }
+        
+    }
+    
     render() { 
+        
         return ( 
             <>
             <div className="col">
@@ -38,12 +56,16 @@ class Plato extends Component {
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                    {this.props.nombre === "Pizza"?<div> <span>Disfruta de una deliciosa Pizza de pollo y champiñon, hawaiana, salami y pepperoni. </span>
-                                                                   <br /><br /> <span>Precio: $15.000</span> </div>:""}
+                                    <span>{this.props.descripcion}</span><br /><br />
+                                    <span>Precio: {'$'+this.props.precio}</span><br /><br />
+                                    <label htmlFor={"cantidad"+this.props.nombre.replace(/ /g,"")} className="form-label">Cantidad</label>
+                                    <input id={"cantidad"+this.props.nombre.replace(/ /g,"")} className="form-control cantidad" type="number" min="1"/>
+                                    <input id={"nombre"+this.props.nombre.replace(/ /g,"")} type="text" hidden value={this.props.nombre}/>
+                                    <input id={"precio"+this.props.nombre.replace(/ /g,"")} type="text" hidden value={this.props.precio}/>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-danger">Agregar al Carrito</button>
+                                    <button type="submit" data-bs-dismiss="modal" onClick={this.agregar.bind(this,"cantidad"+this.props.nombre.replace(/ /g,""),"nombre"+this.props.nombre.replace(/ /g,""),"precio"+this.props.nombre.replace(/ /g,""))} class="btn btn-danger">Agregar al Carrito</button>
                                 </div>
                                 </div>
                             </div>

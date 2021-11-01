@@ -12,6 +12,7 @@ import QuienesSomos from "./Rutas/QuienesSomos";
 import Menu from "./Rutas/Menu";
 import Contacto from "./Rutas/Contacto";
 import MapaSitio from "./Rutas/MapaSitio";
+import Carrito from "./Rutas/Carrito";
 
 
 class Layout extends Component {
@@ -42,7 +43,7 @@ class Layout extends Component {
                             <Link to="/juventic/contacto" className="nav-link">Contáctenos</Link>
                             <Link to="/juventic/mapasitio" className="nav-link">Mapa del Sitío</Link>
                             <Link to="/" className="nav-link">Reserva Ya</Link>
-                            <Link to="/" className="nav-link"><img src={imagenes.logoCarrito} width="30px" alt="" /> Carrito</Link>
+                            <Link to="/juventic/carrito" className="nav-link"><img src={imagenes.logoCarrito} width="30px" alt="" /> Carrito</Link>
                         </div>
                         </div>
                     </div>
@@ -53,6 +54,7 @@ class Layout extends Component {
                         <Route path="/juventic/menu" exact component={Menu}></Route>
                         <Route path="/juventic/contacto" component={Contacto}></Route>
                         <Route path="/juventic/mapasitio" exact component={MapaSitio}></Route>
+                        <Route path="/juventic/carrito" exact component={Carrito}></Route>
                         <Route path="/" exact component={Inicio}></Route>
                     {/* Fin de rutas */}
 
