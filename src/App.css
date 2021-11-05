@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+.bg-gray{
+  background-color:#f0f2f5;
+}
+.login{
+  margin-top: 120px;
+}
+.form-login{
+  width:60%;
+}
+.menuAdmin{
+  background-color:#D5DBDB;
+}

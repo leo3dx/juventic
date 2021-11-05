@@ -14,7 +14,8 @@ import Contacto from "./Rutas/Contacto";
 import MapaSitio from "./Rutas/MapaSitio";
 import Carrito from "./Rutas/Carrito";
 import Pedido from "./Rutas/Pedido";
-
+import Login from "./Rutas/Login";
+import Admin from "./Rutas/Admin";
 
 class Layout extends Component {
     constructor(props) {
@@ -28,7 +29,7 @@ class Layout extends Component {
         return ( 
             <>
             <Router>
-                <div className="container-fluid p-0">
+                <div className="container-fluid p-0 bg-gray">
                     <nav className="navbar navbar-expand-lg navbar-dark bg-danger">
                     <div className="container-fluid">
                         <Link to="/juventic" className="navbar-brand fs-4 fw-bold" ><img className="logo" src={imagenes.logo} alt="Logo" />Sal&Salsa</Link>
@@ -45,6 +46,7 @@ class Layout extends Component {
                             <Link to="/juventic/mapasitio" className="nav-link">Mapa del Sitío</Link>
                             <Link to="/" className="nav-link">Reserva Ya</Link>
                             <Link to="/juventic/carrito" className="nav-link"><img src={imagenes.logoCarrito} width="30px" alt="" /> Carrito</Link>
+                            <Link to="/juventic/login" className="nav-link">Iniciar sesión</Link>
                         </div>
                         </div>
                     </div>
@@ -58,9 +60,11 @@ class Layout extends Component {
                         <Route path="/juventic/pedido" exact component={Pedido}></Route>
                         <Route path="/juventic/carrito" exact component={Carrito}></Route>
                         <Route path="/" exact component={Inicio}></Route>
+                        <Route path="/juventic/login" exact component={Login}></Route>
+                        <Route path="/juventic/admin" exact component={Admin}></Route>
                     {/* Fin de rutas */}
 
-
+                    
                     <footer class="bg-danger">
                            <div className="row">
                                <div className="col text-center">
