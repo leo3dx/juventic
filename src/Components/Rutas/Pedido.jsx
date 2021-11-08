@@ -4,8 +4,8 @@ import emailjs from "emailjs-com";
 import {Link, Redirect} from "react-router-dom";
 
 class Pedido extends Component {
-    constructor(props,context) {
-        super(props,context);
+    constructor(props) {
+        super(props);
         this.state = {  }
     }
 

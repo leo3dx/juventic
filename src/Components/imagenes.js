@@ -24,6 +24,13 @@ import carneAsada from '../Assets/img/carneAsada.jpg';
 import nuggets from '../Assets/img/nugets.jpg';
 import burritos from '../Assets/img/burritos.jpg';
 import chorizos from '../Assets/img/chorizos.jpg';
+import despedida from '../Assets/img/despedida.jpg';
+import cumple from '../Assets/img/cumple.jpg';
+import aniversario from '../Assets/img/aniversario.jpg';
+import fiestas from '../Assets/img/fiestas.jpg';
+import declaracion from '../Assets/img/declaracion.jpg';
+import cena from '../Assets/img/cena.jpg';
+import reserva from '../Assets/img/reserva.png';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -52,5 +59,12 @@ export default {
     carneAsada: carneAsada,
     chorizos: chorizos,
     nuggets: nuggets,
-    burritos: burritos
+    burritos: burritos,
+    despedida: despedida,
+    cumple: cumple,
+    aniversario: aniversario,
+    fiestas: fiestas,
+    declaracion: declaracion,
+    cena: cena,
+    reserva: reserva
 }

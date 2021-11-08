@@ -37,4 +37,13 @@ footer {
 .cantidad{
     width:70px;
 }
-
+.ServicioI{
+    height: 300px;
+    width: 400px;
+}
+.ContainerS{
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

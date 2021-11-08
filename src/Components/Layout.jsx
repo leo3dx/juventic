@@ -16,6 +16,8 @@ import Carrito from "./Rutas/Carrito";
 import Pedido from "./Rutas/Pedido";
 import Login from "./Rutas/Login";
 import Admin from "./Rutas/Admin";
+import Servicios from "./Rutas/Servicios";
+import Reserva from "./Rutas/Reserva";
 
 class Layout extends Component {
     constructor(props) {
@@ -44,7 +46,7 @@ class Layout extends Component {
                             <Link to="/juventic/servicios" className="nav-link">Servicios</Link>
                             <Link to="/juventic/contacto" className="nav-link">Contáctenos</Link>
                             <Link to="/juventic/mapasitio" className="nav-link">Mapa del Sitío</Link>
-                            <Link to="/" className="nav-link">Reserva Ya</Link>
+                            <Link to="/juventic/reserva" className="nav-link"><img src={imagenes.reserva} width="45px" alt="" /> Reserva Ya</Link>
                             <Link to="/juventic/carrito" className="nav-link"><img src={imagenes.logoCarrito} width="30px" alt="" /> Carrito</Link>
                             <Link to="/juventic/login" className="nav-link">Iniciar sesión</Link>
                         </div>
@@ -55,13 +57,16 @@ class Layout extends Component {
                         <Route path="/juventic" exact component={Inicio}></Route>
                         <Route path="/juventic/quienessomos" component={QuienesSomos}></Route>
                         <Route path="/juventic/menu" exact component={Menu}></Route>
+                        <Route path="/juventic/servicios" exact component={Servicios}></Route>
                         <Route path="/juventic/contacto" component={Contacto}></Route>
                         <Route path="/juventic/mapasitio" exact component={MapaSitio}></Route>
+                        <Route path="/juventic/reserva" exact component={Reserva}></Route>
                         <Route path="/juventic/pedido" exact component={Pedido}></Route>
                         <Route path="/juventic/carrito" exact component={Carrito}></Route>
                         <Route path="/" exact component={Inicio}></Route>
                         <Route path="/juventic/login" exact component={Login}></Route>
                         <Route path="/juventic/admin" exact component={Admin}></Route>
+
                     {/* Fin de rutas */}
 
                     

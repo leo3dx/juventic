@@ -9,7 +9,7 @@ class Contacto extends Component {
     }
     enviar(e){
       e.preventDefault();
-      init("user_qMQQFb77OfTUyGqNOy7My");
+      init("user_JWNKLgBdlwgzeIS3sjhpb");
       let tempParams = {
         from_name: document.getElementById("from_name").value,
         to_email: document.getElementById("to_email").value,
